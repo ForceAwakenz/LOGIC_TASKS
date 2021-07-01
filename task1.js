@@ -4,13 +4,13 @@
 function minAndMax(inputArray) {
 
     if (!Array.isArray(inputArray)) return "Invalid data, please insert an array!";
-    if (isNaN(inputArray[0])) return "Error, array must contain only numbers";
+    if (isNaN(inputArray[0])) return "Error, an array must contain only numbers";
 
     let min = inputArray[0];
     let max = inputArray[0];
 
     for (let i = 1; i < inputArray.length; i++) {
-        if (isNaN(inputArray[i])) return "Error, array must contain only numbers";
+        if (isNaN(inputArray[i])) return "Error, an array must contain only numbers";
         min = (min < inputArray[i]) ? min : inputArray[i];
         max = (max > inputArray[i]) ? max : inputArray[i];
     }

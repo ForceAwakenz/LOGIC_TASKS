@@ -3,11 +3,11 @@
 
 function averageValue(inputArray) {
     
-    if (!Array.isArray(inputArray)) { return "Invalid data, insert array" };
+    if (!Array.isArray(inputArray)) { return "Invalid data, insert an array" };
 
     let sumArray = 0;
     for (let i = 0; i < inputArray.length; i++) {
-        if (isNaN(inputArray[i])) return "Error, array must contain only numbers";
+        if (isNaN(inputArray[i])) return "Error, an array must contain only numbers";
         sumArray += inputArray[i];
     }
 

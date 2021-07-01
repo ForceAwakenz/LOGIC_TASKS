@@ -10,10 +10,10 @@ function ifArraySorted(inputArray) {
     for (let i = 1; i < inputArray.length; i++) {
         if (isNaN(inputArray[i])) return "Error, an array must contain only numbers";
         if (inputArray[i - 1] <= inputArray[i]) {
-            ifSorted = "An array is sorted";
-        } else { return "An array is not sorted"; }
+            ifSorted = true;
+        } else { return false; }
     }
     
-    return "An array is sorted";
+    return true;
 
 }

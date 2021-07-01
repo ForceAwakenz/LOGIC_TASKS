@@ -17,8 +17,3 @@ function ifArraySorted(inputArray) {
     return "An array is sorted";
 
 }
-
-
-let testArray = [4, 8, 12, 17, 19];
-
-console.log(ifArraySorted(testArray));

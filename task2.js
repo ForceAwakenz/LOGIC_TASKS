@@ -3,7 +3,7 @@
 
 function averageValue(inputArray) {
     
-    if (!(inputArray instanceof Array)) { return "Invalid data, insert array" };
+    if (!(inputArray instanceof Array)) { return "Invalid data, please insert an array!" };
 
     let sumArray = 0;
     for (let i = 0; i < inputArray.length; i++) {

@@ -19,6 +19,6 @@ function minAndMax(inputArray) {
 }
 
 
-let testArray = ['4, 20, -1, 33'];
+let testArray = [4, 20, -1, 33];
 
 console.log(minAndMax(testArray));

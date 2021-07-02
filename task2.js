@@ -15,6 +15,6 @@ function averageValue(inputArray) {
 
 }
 
-let testArray2 = ['4, 20, -1, 33'];
+let testArray2 = [4, 20, -1, 33];
 
 console.log(averageValue(testArray2));

@@ -3,7 +3,7 @@
 
 function ifArraySorted(inputArray) {
     
-    if (!Array.isArray(inputArray)) { return "Invalid data, insert an array" };
+    if (!(inputArray instanceof Array)) { return "Invalid data, insert array" };
     if (isNaN(inputArray[0])) return "Error, an array must contain only numbers";
 
     for (let i = 1; i < inputArray.length; i++) {

@@ -3,7 +3,7 @@
 
 function minAndMax(inputArray) {
 
-    if (!Array.isArray(inputArray)) return "Invalid data, please insert an array!";
+    if (!(inputArray instanceof Array)) return "Invalid data, please insert an array!";
     if (isNaN(inputArray[0])) return "Error, an array must contain only numbers";
 
     let min = inputArray[0];

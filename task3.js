@@ -3,22 +3,22 @@
 
 function ifArraySorted(inputArray) {
     
-    if (!Array.isArray(inputArray)) { return "Invalid data, insert array" };
+    if (!(inputArray instanceof Array)) { return "Invalid data, insert array" };
     let ifSorted;
-    if (isNaN(inputArray[0])) return "Error, array must contain only numbers";
+    if (isNaN(inputArray[0])) return "Error, an array must contain only numbers";
 
     for (let i = 1; i < inputArray.length; i++) {
-        if (isNaN(inputArray[i])) return "Error, array must contain only numbers";
+        if (isNaN(inputArray[i])) return "Error, an array must contain only numbers";
         if (inputArray[i - 1] <= inputArray[i]) {
-            ifSorted = "An array is sorted";
-        } else { return "An array is not sorted"; }
+            ifSorted = true;
+        } else { return false; }
     }
     
-    return "An array is sorted";
+    return true;
 
 }
 
 
-let testArray = [4, 8, 12, 17, 19];
+let testArray3= ['4b'];
 
-console.log(ifArraySorted(testArray));
+console.log(ifArraySorted(testArray3));

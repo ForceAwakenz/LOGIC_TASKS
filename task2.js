@@ -3,11 +3,11 @@
 
 function averageValue(inputArray) {
     
-    if (!Array.isArray(inputArray)) { return "Invalid data, insert array" };
+    if (!(inputArray instanceof Array)) { return "Invalid data, insert array" };
 
     let sumArray = 0;
     for (let i = 0; i < inputArray.length; i++) {
-        if (isNaN(inputArray[i])) return "Error, array must contain only numbers";
+        if (isNaN(inputArray[i])) return "Error, an array must contain only numbers";
         sumArray += inputArray[i];
     }
 
@@ -15,6 +15,6 @@ function averageValue(inputArray) {
 
 }
 
-let testArray = [10, 'b', 20, 30];
+let testArray2 = ['4, 20, -1, 33'];
 
-console.log(averageValue(testArray));
+console.log(averageValue(testArray2));

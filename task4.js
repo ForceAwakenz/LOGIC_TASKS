@@ -3,7 +3,7 @@
 function factorial(inputNumber) {
     
     if (isNaN(inputNumber)) {
-        return 'Invalid input, please choose number.'
+        return 'Invalid input, please choose a number.'
     }
 
     if (inputNumber != 1) {

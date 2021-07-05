@@ -3,17 +3,17 @@
 function addAllSequence(lastNumber) {
 
     if (isNaN(lastNumber)) {
-        return 'Invalid input, please choose number.'
+        return 'Invalid input, please choose a number.'
     }
 
     if (lastNumber > 1) {
         return lastNumber + addAllSequence(lastNumber - 1);
     } else if (lastNumber < -1) {
         return lastNumber + addAllSequence(lastNumber + 1);
-    } if (lastNumber == -1) {
-        return -1;
-    } else if (lastNumber == 1) {
+    } if (lastNumber == 1) {
         return 1;
+    } else if (lastNumber == -1) {
+        return -1;
     } else { return 0;}
 
 }

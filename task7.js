@@ -8,7 +8,9 @@ function concatString(inputString) {
  
     return function (stringToAdd) {
 
-        if (stringToAdd === undefined) return mainString;
+        if (stringToAdd === undefined) {
+            return mainString;
+        }
         
         mainString += stringToAdd;
         

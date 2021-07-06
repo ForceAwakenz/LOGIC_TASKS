@@ -15,6 +15,8 @@ function factorial(inputNumber) {
 
     if (inputNumber != 1) {
         return inputNumber * factorial(inputNumber - 1);
-    } else { return 1; }
+    } else {
+        return 1;
+    }
     
 }

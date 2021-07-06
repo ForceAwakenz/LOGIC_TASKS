@@ -3,7 +3,8 @@
 
 function concatString(inputString) {
 
-    let mainString = !!inputString ? inputString : '';
+    let mainString =
+        !(typeof (inputString) == 'undefined') ? String(inputString) : '';
  
     return function (stringToAdd) {
 

@@ -3,7 +3,7 @@
 
 function revertString(inputString) {
 
-    inputString = '' + inputString;
+    inputString = String(inputString);
 
     let outputString = '';
     for (let i = inputString.length - 1; i >= 0; i--) {

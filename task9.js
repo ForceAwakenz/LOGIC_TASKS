@@ -4,26 +4,10 @@ const arr = [ { id: 1 }, { id: 2 }, { id: 3 }, { id: 1 }]
 
 let filteringSet = new Set();
 
-filteringArray = [...arr];
-
-
-for (const element in filteringArray) {
-
-    filteringSet.add(filteringArray[element].id);
-
-    // console.log(filteringArray[element].id);
-}
-
-
-for (i = 0, counter = 0; i < arr.length; i++) {
+for (let i = 0, counter = 0; i < arr.length; i++) {
     counter = filteringSet.size;
     filteringSet.add(arr[i].id);
     if (filteringSet.size == counter) {
-        
+        delete arr[i];
     }
 }
-
-
-
-console.log(filteringArray);
-console.log(filteringSet);

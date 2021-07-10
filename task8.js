@@ -8,17 +8,13 @@ const sarah = {
     }
   }
   
-function printJobName(user) {
-  console.log(user.job.name);
-}
-
-printJobName(sarah);
-
 // необходимо осуществить рефакторинг используя деструктуризацию над функцией без потери функциональности.
 
-function printJobNameRefactored(user) {
-  let {job : {name: jobName = "Property 'Job name' doesn't exist"} } = user;
+function printJobName(user) {
+  let { job:
+    { name: jobName = "Property 'Job name' doesn't exist" }
+  } = user;
   console.log(jobName);
 }
 
-printJobNameRefactored(sarah);
+printJobName(sarah);

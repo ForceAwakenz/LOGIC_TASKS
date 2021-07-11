@@ -8,6 +8,7 @@ for (let i = 0, counter = 0; i < arr.length; i++) {
     counter = filteringSet.size;
     filteringSet.add(arr[i].id);
     if (filteringSet.size == counter) {
-        delete arr[i];
+        arr.splice(i, 1);
+        i--;
     }
 }

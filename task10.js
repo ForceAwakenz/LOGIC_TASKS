@@ -7,6 +7,7 @@ function User(firstName, lastName, age) {
     this.firstName = firstName ?? '(First name was not assigned)';
     this.lastName = lastName ?? '(Last name was not assigned)';
     this.age = age ?? '(Age was not assigned)';
+    // Aren't this checks too redundant? ^
 
     this.print = () => {
         console.log(

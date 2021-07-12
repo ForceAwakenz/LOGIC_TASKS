@@ -10,13 +10,9 @@ const sarah = {
   
 // необходимо осуществить рефакторинг используя деструктуризацию над функцией без потери функциональности.
 
-function printJobName(user) {
-
-  const { job:
-    { name }
-  } = user;
+function printJobName( { job: { name } })
+{
   console.log(name);
-  
 }
 
 printJobName(sarah);

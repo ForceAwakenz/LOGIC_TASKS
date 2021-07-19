@@ -15,7 +15,13 @@ class User {
 }
 
 
+class Admin extends User {
 
+    constructor(firstName, lastName, age, role) {
+      super(firstName, lastName, age);
+      this.role = role;
+    }
 
+}
 
-
+let administrator = new Admin('John', 'Doe', 44, 'Admin');

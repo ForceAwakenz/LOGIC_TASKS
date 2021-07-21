@@ -10,4 +10,3 @@ function calc() {
 }
 
 calc.apply(numbers);
-

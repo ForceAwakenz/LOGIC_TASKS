@@ -8,7 +8,7 @@ function someComplexStuff(number) {
         .reduce((total, current) => total + current, '')
         .split('')
         .map(num => num ** 10)
-        .reduce((total, current) => total + +current, 0)
+        .reduce((total, current) => total + current, 0)
 };
 
 

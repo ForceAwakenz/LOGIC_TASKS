@@ -25,9 +25,9 @@ async function f() {
         console.log(data);
     } catch (e) {
         console.error(e);
+    } finally {
+        console.log('Promise complete');
     }
-    
-    console.log('Promise complete');
 
 }
 

@@ -16,3 +16,4 @@ function ifArraySorted(inputArray) {
     return true;
 
 }
+
